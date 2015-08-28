@@ -3,7 +3,7 @@ pop chooselist to window
 ###show list 
 
 ###Example
-![Screenshot of  Example](TechPopList/blob/master/gif/123.gif)
+![Screenshot of  Example](gif/123.gif)
 
 
 ```objc
