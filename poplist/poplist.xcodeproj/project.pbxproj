@@ -14,6 +14,10 @@
 		9A1B08B21B900C7F001CEAE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1B08B11B900C7F001CEAE6 /* Images.xcassets */; };
 		9A1B08B51B900C7F001CEAE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1B08B31B900C7F001CEAE6 /* LaunchScreen.xib */; };
 		9A1B08C11B900C7F001CEAE6 /* poplistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B08C01B900C7F001CEAE6 /* poplistTests.m */; };
+		9A1B08D11B900CBC001CEAE6 /* TePopList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B08CC1B900CBC001CEAE6 /* TePopList.m */; };
+		9A1B08D21B900CBC001CEAE6 /* TePopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B08CE1B900CBC001CEAE6 /* TePopListCell.m */; };
+		9A1B08D31B900CBC001CEAE6 /* TePopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1B08CF1B900CBC001CEAE6 /* TePopListCell.xib */; };
+		9A1B08D41B900CBC001CEAE6 /* TePoplistImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A1B08D01B900CBC001CEAE6 /* TePoplistImage.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		9A1B08BA1B900C7F001CEAE6 /* poplistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poplistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1B08BF1B900C7F001CEAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A1B08C01B900C7F001CEAE6 /* poplistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = poplistTests.m; sourceTree = "<group>"; };
+		9A1B08CB1B900CBC001CEAE6 /* TePopList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TePopList.h; sourceTree = "<group>"; };
+		9A1B08CC1B900CBC001CEAE6 /* TePopList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TePopList.m; sourceTree = "<group>"; };
+		9A1B08CD1B900CBC001CEAE6 /* TePopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TePopListCell.h; sourceTree = "<group>"; };
+		9A1B08CE1B900CBC001CEAE6 /* TePopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TePopListCell.m; sourceTree = "<group>"; };
+		9A1B08CF1B900CBC001CEAE6 /* TePopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TePopListCell.xib; sourceTree = "<group>"; };
+		9A1B08D01B900CBC001CEAE6 /* TePoplistImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TePoplistImage.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,7 @@
 				9A1B08AB1B900C7F001CEAE6 /* ViewController.h */,
 				9A1B08AC1B900C7F001CEAE6 /* ViewController.m */,
 				9A1B08AE1B900C7F001CEAE6 /* Main.storyboard */,
+				9A1B08CA1B900CBC001CEAE6 /* TechPopList */,
 				9A1B08B11B900C7F001CEAE6 /* Images.xcassets */,
 				9A1B08B31B900C7F001CEAE6 /* LaunchScreen.xib */,
 				9A1B08A41B900C7F001CEAE6 /* Supporting Files */,
@@ -117,6 +128,19 @@
 				9A1B08BF1B900C7F001CEAE6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A1B08CA1B900CBC001CEAE6 /* TechPopList */ = {
+			isa = PBXGroup;
+			children = (
+				9A1B08CB1B900CBC001CEAE6 /* TePopList.h */,
+				9A1B08CC1B900CBC001CEAE6 /* TePopList.m */,
+				9A1B08CD1B900CBC001CEAE6 /* TePopListCell.h */,
+				9A1B08CE1B900CBC001CEAE6 /* TePopListCell.m */,
+				9A1B08CF1B900CBC001CEAE6 /* TePopListCell.xib */,
+				9A1B08D01B900CBC001CEAE6 /* TePoplistImage.bundle */,
+			);
+			path = TechPopList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1B08B01B900C7F001CEAE6 /* Main.storyboard in Resources */,
+				9A1B08D41B900CBC001CEAE6 /* TePoplistImage.bundle in Resources */,
 				9A1B08B51B900C7F001CEAE6 /* LaunchScreen.xib in Resources */,
+				9A1B08D31B900CBC001CEAE6 /* TePopListCell.xib in Resources */,
 				9A1B08B21B900C7F001CEAE6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +247,8 @@
 			files = (
 				9A1B08AD1B900C7F001CEAE6 /* ViewController.m in Sources */,
 				9A1B08AA1B900C7F001CEAE6 /* AppDelegate.m in Sources */,
+				9A1B08D11B900CBC001CEAE6 /* TePopList.m in Sources */,
+				9A1B08D21B900CBC001CEAE6 /* TePopListCell.m in Sources */,
 				9A1B08A71B900C7F001CEAE6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
